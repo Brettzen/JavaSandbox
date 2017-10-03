@@ -2,6 +2,12 @@ class Vehicle {
     int passengers;
     int fuelcap;
     int mpg;
+
+    Vehicle(int p, int f, int m) {
+        passengers = p;
+        fuelcap = f;
+        mpg = m;
+    }
     
     int range() {
         return mpg * fuelcap;
@@ -14,18 +20,10 @@ class Vehicle {
 
 class VehicleDemo {
     public static void main(String args[]) {
-       Vehicle minivan = new Vehicle();
-       Vehicle sportscar = new Vehicle();
+       Vehicle minivan = new Vehicle(7, 16, 21);
+       Vehicle sportscar = new Vehicle(2, 14, 12);
        double gallons;
        int dist = 252;
-
-        minivan.passengers = 7;
-        minivan.fuelcap = 16;
-        minivan.mpg = 21;
-
-        sportscar.passengers = 2;
-        sportscar.fuelcap = 14;
-        sportscar.mpg = 12;
 
         gallons = minivan.fuelneeded(dist);
 
