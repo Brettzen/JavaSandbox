@@ -3,8 +3,8 @@ class Vehicle {
     int fuelcap;
     int mpg;
     
-    void range(){
-        System.out.println("Range is " + fuelcap * mpg);
+    int range(){
+        return mpg * fuelcap;
     }
 }
 
@@ -21,10 +21,8 @@ class TwoVehicles {
         sportscar.fuelcap = 14;
         sportscar.mpg = 12;
 
-        System.out.print("Minivan can carry " + minivan.passengers + ". ");
-        minivan.range();
-        System.out.print("Sportscar can carry " + sportscar.passengers + ". ");
-        sportscar.range();
+        System.out.println("Minivan can carry " + minivan.passengers + " with range of " + minivan.range() + " miles");
+        System.out.println("Sportscar can carry " + sportscar.passengers + " with range of " + sportscar.range() + " miles");
     }
     
     
