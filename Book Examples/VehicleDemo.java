@@ -1,7 +1,7 @@
 class Vehicle {
-    int passengers;
-    int fuelcap;
-    int mpg;
+    private int passengers;
+    private int fuelcap;
+    private int mpg;
 
     Vehicle(int p, int f, int m) {
         passengers = p;
